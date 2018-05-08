@@ -1,5 +1,5 @@
 #!/bin/sh
-PICTURES="*.DNG *.JPG"
+PICTURES="*.DNG *.JPG *.CR2"
 MOVIES="*.MOV"
 mkdir 1-capture 2-select 3-master 4-output 10-video
 mv $PICTURES 1-capture
