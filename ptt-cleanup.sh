@@ -11,6 +11,8 @@ for d in $(find $DIRS -empty 2>/dev/null); do
   RM_DIRS="$d $RM_DIRS"
 done
 
+if [ -z "$RM_DIRS" ]; then echo "No empty directory found; exiting"; exit; fi
+
 echo "The following dirs are empty and will be removed:"
 echo $RM_DIRS
 echo "Continue (Y/n)?"
