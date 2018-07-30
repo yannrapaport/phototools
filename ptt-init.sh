@@ -1,6 +1,6 @@
 #!/bin/sh
-PICTURES="*.DNG *.JPG *.CR2"
-MOVIES="*.MOV"
-mkdir 1-capture 2-select 3-master 4-output 10-video
-mv $PICTURES 1-capture
-mv $MOVIES 10-video
+source $(dirname $0)/ptt-lib.inc
+
+mkdir $DIRS
+mv $PICTURES 1-capture 2>/dev/null
+mv $MOVIES 10-video 2>/dev/null
