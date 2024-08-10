@@ -6,8 +6,8 @@
 #  Created by Yann Rapaport on 30/07/2018.
 #  
 
-PHOTOS="*.DNG *.JPG *.CR2 *.ARW"
-VIDEOS="*.MOV *.MP4"
+PHOTOS="*.dng *.jpg *.cr2 *.arw"
+VIDEOS="*.mov *.mp4"
 DIRS="1-photos 10-export 1-videos"
 
 debug() {
